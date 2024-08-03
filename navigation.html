@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewpoint" content = "width = device-width, initial-scale = 1.0">
+<title>  Navigation Menu </title>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+	}	
+	ul{
+		display: flex;
+              	justify-content: space-between;
+	}
+		
+	li{
+		list-style: none;
+		
+	}
+	a{
+		text-decoration: none;
+		color: #94dbe6;
+		
+	}
+	nav{
+		background-color: grey;
+		padding: 5px;
+		
+	}
+	li::before {
+		content: "★";
+		margin: 7px;
+	}
+	#firstlink{
+		padding : 5px;
+		background-color: rgb(23, 17, 17);
+	}
+
+	#firstlink ul li:nth-child(odd){
+		color: red;
+	}
+	#firstlink ul li:nth-child(2) a {
+    		color: red;
+	}
+	#firstlink ul li:nth-child(even){
+		color: yellow ;
+	}
+
+</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href = "#" >Home</a></li>
+			<li><a href = "#" >contact</a></li>
+			<li><a href = "#" >Search</a></li>
+			<li><a href = "#" >About</a></li>
+		</ul>
+	</nav>
+	<div id = "firstlink"> 
+		<ul>
+			<li><a href = "#" >contact</a></li>
+			<li><a href = "#" >Search</a></li>
+			<li><a href = "#" >About</a></li>
+		</ul>
+			
+</body>
+</html>
