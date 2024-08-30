@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width for Different Display Values</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    .block-element-default{
+        display: block;
+        border: 2px solid #333;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .block-element-fixed{
+        width: 300px;
+        display: block;
+        border: 2px solid #333;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .inline-element-default{
+        border: 1px dashed #007BFF;
+        padding: 5px;
+    }
+    .inline-element-fixed{
+        border: 1px dashed #007BFF;
+        padding: 5px;
+        width: 100px;
+    }
+    .inline-block-element-default{
+        display: inline-block;
+        border: 1px solid #FF5733;
+        padding: 5px;
+        margin-top: 35px;
+    }
+    .inline-block-element-fixed{
+        display: inline-block;
+        border: 1px solid #FF5733;
+        padding: 5px;
+        width: 150px;
+    }
+</style>
+</head>
+<body>
+    <div class="block-element-default">Block Element (Default Width)</div>
+    <div class="block-element-fixed">Block Element (Fixed Width)</div>
+    <span class="inline-element-default">Inline Element (Default Width)</span>
+    <span class="inline-element-default">Inline Element (Default Width)</span>
+    <span class="inline-element-default">Inline Element (Default Width)</span>
+    <span class="inline-element-fixed">Inline Element (Fixed Width)</span>
+    <span class="inline-element-fixed">Inline Element (Fixed Width)</span>
+    <span class="inline-element-fixed">Inline Element (Fixed Width)</span>
+    <div class="inline-block-element-default">inline-block-element-default</div>
+    <div class="inline-block-element-default">inline-block-element-default</div>
+    <div class="inline-block-element-default">inline-block-element-default</div>
+    <div class="inline-block-element-fixed">Inline-Block Element (Fixed Width)</div>
+    <div class="inline-block-element-fixed">Inline-Block Element (Fixed Width)</div>
+    <div class="inline-block-element-fixed">Inline-Block Element (Fixed Width)</div>
+</body>
+</html>

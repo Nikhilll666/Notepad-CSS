@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .first-paragraph{
+            clear: both;
+        }
+        .second-paragraph{
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="div" class="float-left">
+        <p class="first-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        <img src="https://via.placeholder.com/150" alt="div" class="float-right">
+        <p class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+</body>
+</html>
